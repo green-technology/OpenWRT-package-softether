@@ -19,7 +19,7 @@ PKG_BUILD_DIR:=$(BUILD_DIR)/v$(PKG_VERSION)-$(PKG_RELEASE)
 #PKG_SOURCE_URL:=http://jp.softether-download.com/files/softether/v$(PKG_VERSION)-$(PKG_RELEASE)-$(PKG_VERSION2)-$(PKG_DATE)-tree/Source_Code/
 PKG_SOURCE:=softether-src-v4.19-9599-beta.zip
 PKG_SOURCE_URL:=https://chuangdian230/svn/browser_platform_code/vpn/code/branches/openwrt/tag/
-PKG_MD5SUM:=9a80ceff728ee8fb7e8c2da86a99e5f6
+PKG_MD5SUM:=e843c4c25f5558770179cd8f96b86b17
 PKG_CAT:=unzip
 
 include $(INCLUDE_DIR)/package.mk
