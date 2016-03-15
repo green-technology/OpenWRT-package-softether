@@ -31,7 +31,7 @@ define Package/softethervpn
 	SUBMENU:=VPN
 	TITLE:=Open-Source Free Cross-platform Multi-protocol VPN
 	URL:=http://www.softether.org/
-	DEPENDS:=+libpthread +librt +libreadline +libopenssl +libncurses +kmod-tun +libglib-2.0 +libgobject-2.0 
+	DEPENDS:=+libpthread +librt +libreadline +libopenssl +libncurses +kmod-tun +libglib2
 endef
 
 #define Package/softethervpnclient
