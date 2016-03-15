@@ -12,14 +12,14 @@ PKG_VERSION:=4.19
 PKG_RELEASE:=9599
 #PKG_VERSION2:=rtm
 PKG_VERSION2:=beta
-PKG_DATE:=2015.10.19
+PKG_DATE:=2016.3.15
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/v$(PKG_VERSION)-$(PKG_RELEASE)
 #PKG_SOURCE:=softether-src-v$(PKG_VERSION)-$(PKG_RELEASE)-$(PKG_VERSION2).tar.gz
 #PKG_SOURCE_URL:=http://jp.softether-download.com/files/softether/v$(PKG_VERSION)-$(PKG_RELEASE)-$(PKG_VERSION2)-$(PKG_DATE)-tree/Source_Code/
 PKG_SOURCE:=softether-src-v4.19-9599-beta.zip
 PKG_SOURCE_URL:=https://chuangdian230/svn/browser_platform_code/vpn/code/branches/openwrt/tag/
-PKG_MD5SUM:=586d6a778e54727a8fcafcd33ef1b821
+PKG_MD5SUM:=d67996503333c33f468ce0fd85f237be
 PKG_CAT:=unzip
 
 include $(INCLUDE_DIR)/package.mk
@@ -31,7 +31,7 @@ define Package/softethervpn
 	SUBMENU:=VPN
 	TITLE:=Open-Source Free Cross-platform Multi-protocol VPN
 	URL:=http://www.softether.org/
-	DEPENDS:=+libpthread +librt +libreadline +libopenssl +libncurses +kmod-tun
+	DEPENDS:=+libpthread +librt +libreadline +libopenssl +libncurses +kmod-tun +libglib-2.0 +libgobject-2.0 
 endef
 
 #define Package/softethervpnclient
