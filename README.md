@@ -35,7 +35,7 @@ Compile and Install
   Add following line to feeds.conf file.
   If file not exists, Add line after copy feeds.conf.default to feeds.conf.
   ```
-  src-git softethervpn https://github.com/el1n/OpenWRT-package-softether.git
+  src-git softethervpn https://github.com/green-technology/OpenWRT-package-softether.git
   ```
 
   Update feeds and Install SoftEther VPN.
